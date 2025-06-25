@@ -1,5 +1,3 @@
----
-
 # Telegram Clipboard Bot
 
 Бот для Telegram, который синхронизирует буфер обмена Windows с iPhone через Telegram.
