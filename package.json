@@ -1,11 +1,40 @@
 {
-  "type": "module",
   "dependencies": {
     "@crosscopy/clipboard": "^0.2.8",
-    "clipboard-sys": "^1.2.1",
-    "clipboardy": "^4.0.0",
     "dotenv": "^16.5.0",
-    "iconv-lite": "^0.6.3",
+    "electron-store": "^10.1.0",
     "node-telegram-bot-api": "^0.66.0"
-  }
+  },
+  "name": "clipboardbot",
+  "description": "Бот для Telegram, который синхронизирует буфер обмена Windows с iPhone через Telegram.",
+  "version": "1.0.0",
+  "main": "main.js",
+  "bin": "main.js",
+  "build": {
+    "appId": "com.kashadeveloper.clipboardbot",
+    "asar": true,
+    "files": [
+      "main.js",
+      "icon.png",
+      "bot/**/*",
+      "logger.js",
+      "preload.js",
+      "index.html"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "scripts": {
+    "build": "electron-builder",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
