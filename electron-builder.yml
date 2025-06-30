@@ -1,5 +1,5 @@
-appId: com.electron.app
-productName: clipboard-electron-vue
+appId: com.kashadeveloper.clipboardbot
+productName: Clipboard Bot v.1.0.0 beta
 directories:
   buildResources: build
 files:
@@ -13,7 +13,7 @@ asarUnpack:
   - resources/**
 win:
   target: portable
-  executableName: clipboard-electron-vue
+  executableName: Clipboard Bot v.1.0.0 beta
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
@@ -40,5 +40,4 @@ appImage:
   artifactName: ${name}-${version}.${ext}
 npmRebuild: false
 publish:
-  provider: generic
-  url: https://example.com/auto-updates
+  provider: github
