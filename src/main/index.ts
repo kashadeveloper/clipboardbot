@@ -57,7 +57,6 @@ function createWindow(): void {
   if (is.dev && process.env['ELECTRON_RENDERER_URL']) {
     mainWindow.loadURL(process.env['ELECTRON_RENDERER_URL'])
   } else {
-    mainWindow.webContents.openDevTools()
     mainWindow.loadFile(indexHtml)
   }
 }
