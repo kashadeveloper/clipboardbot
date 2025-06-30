@@ -1,34 +1,71 @@
-# clipboard-electron-vue
+# 📋 ClipboardBot
 
-An Electron application with Vue and TypeScript
+Electron-приложение для управления буфером обмена через Telegram-бота.  
+Поддерживает получение и очистку буфера, копирование текста и отправку изображений и файлов.
 
-## Recommended IDE Setup
+---
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+## 🚀 Возможности
 
-## Project Setup
+- 📥 Копирование текста из сообщений Telegram в буфер обмена
+- 📤 Получение текста, изображений и файлов из буфера
+- ❌ Очистка буфера
+- ⚙️ Настройки через интерфейс
+---
 
-### Install
+## 🛠️ Установка
+
+В примерах приведен пакетный менеджер ``npm``. Вы можете использовать любой пакетный менеджер, совместимый с node >= 18
+
+1. Клонируйте репозиторий:
+
+   ```bash
+   git clone https://github.com/kashadeveloper/clipboardbot.git
+   cd clipboardbot
+   ```
+
+2. Установите зависимости:
+
+   ```bash
+   npm install
+   ```
+
+---
+
+## ▶️ Запуск
 
 ```bash
-$ npm install
+npm run dev
 ```
 
-### Development
+---
+
+## 📦 Сборка
+
+Для Windows:
 
 ```bash
-$ npm run dev
+npm run build:win
 ```
 
-### Build
+Сборка появится в папке `dist/`.
 
-```bash
-# For windows
-$ npm run build:win
+---
 
-# For macOS
-$ npm run build:mac
+## 📸 Скриншоты
 
-# For Linux
-$ npm run build:linux
-```
+<p align="center">
+  <img src="./assets/image.png" height="400" alt="">
+</p>
+
+---
+
+## 🧑‍💻 Автор
+
+kashadeveloper
+
+---
+
+## 📝 Лицензия
+
+MIT

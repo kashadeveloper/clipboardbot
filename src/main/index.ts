@@ -1,13 +1,12 @@
 import { is, optimizer } from '@electron-toolkit/utils'
-import { app, BrowserWindow, ipcMain, ipcRenderer, shell, Tray } from 'electron'
+import { app, BrowserWindow, ipcMain, shell, Tray } from 'electron'
 import path, { join } from 'path'
 import { fileURLToPath } from 'url'
 import icon from '../../resources/icon.png?asset'
-import store from './store/store'
 import * as botModule from '../bot/index'
+import store from './store/store'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const indexHtml = path.join(__dirname, '../renderer/index.html')
-
 const trayIconPath = path.join(__dirname, '../../resources/icon.png')
 const productionIconPath = path.join(app.getAppPath(), 'resources/icon.png')
 

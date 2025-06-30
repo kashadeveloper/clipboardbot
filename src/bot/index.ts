@@ -85,7 +85,7 @@ function setupClearClipboardHandler(bot: TelegramBot): void {
 function setupMenuHandler(bot: TelegramBot): void {
   bot.onText(/\/keyboard|\/start/i, (msg) => {
     if (!isBotActive) return
-    if (isPrivateFromAuthor(msg)) return
+    if (!isPrivateFromAuthor(msg)) return
     bot.sendMessage(msg.chat.id, 'Меню', {
       reply_markup: {
         resize_keyboard: true,

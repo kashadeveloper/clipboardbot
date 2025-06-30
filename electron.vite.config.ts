@@ -5,6 +5,11 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig({
   main: {
+    build: {
+      rollupOptions: {
+        external: ['node-telegram-bot-api', 'call-bind-apply-helpers']
+      }
+    },
     plugins: [
       externalizeDepsPlugin(),
       viteStaticCopy({
